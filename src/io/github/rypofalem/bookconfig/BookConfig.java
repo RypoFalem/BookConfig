@@ -204,6 +204,10 @@ public class BookConfig {
 		}
 	}
 	
+	public HashMap<String, String> getMap(){
+		return map;
+	}
+	
 	public Set<String> getKeys(){
 		if(map != null) return map.keySet();
 		return null;
@@ -212,4 +216,5 @@ public class BookConfig {
 	public ArrayList<String> getDebugMessages(){
 		return debugInfo;
 	}
+	
 }
